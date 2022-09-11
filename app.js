@@ -1,8 +1,12 @@
-// import functions and grab DOM elements
+const displayBackgroundImage = () => {
+const rightColumnTop = document.getElementById('right-column-top');
+const divOne = document.getElementById('div-one');
+const location = rightColumnTop.value; 
 
-// let state
+divOne.style.backgroundImage = `/assets/${location}.png`;
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+console.log('divOne', rightColumnTop, divOne);
+return rightColumnTop
+
+}
+displayBackgroundImage();
